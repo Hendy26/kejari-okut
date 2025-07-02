@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KKN Margodadi | Kelompok 12 OKUT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      .hero-overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .fade-in {
+        animation: fadeIn 1s ease-in;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="#" class="flex-shrink-0 flex items-center">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1ed1bf68-1c81-4132-96ad-0e42660df15b.png"
+                alt="Logo KKN Margodadi Kelompok 12 berbentuk perisai dengan warna hijau dan kuning"
+                class="h-8 w-8 rounded-full"
+              />
+              <span class="ml-2 text-xl font-bold text-green-700">KKN Margodadi</span>
+            </a>
+          </div>
+          <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+            <a href="#home" class="text-gray-700 hover:text-green-600 px-3 py-2 font-medium transition">Beranda</a>
+            <a href="#about" class="text-gray-700 hover:text-green-600 px-3 py-2 font-medium transition">Tentang</a>
+            <a href="#program" class="text-gray-700 hover:text-green-600 px-3 py-2 font-medium transition">Program</a>
+            <a href="#gallery" class="text-gray-700 hover:text-green-600 px-3 py-2 font-medium transition">Galeri</a>
+            <a href="#contact" class="text-gray-700 hover:text-green-600 px-3 py-2 font-medium transition">Kontak</a>
+          </div>
+          <div class="-mr-2 flex items-center md:hidden">
+            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-16 h-screen flex items-center justify-center overflow-hidden">
+      <div class="hero-overlay absolute inset-0">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6bff64ef-1874-48ca-8505-ace2ada2f362.png"
+          alt="Pemandangan desa Margodadi dengan sawah terhampar dan rumah tradisional di kejauhan"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="relative z-10 px-4 text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 fade-in">KKN Margodadi Kelompok 12</h1>
+        <p class="text-xl md:text-2xl text-gray-200 mb-8 fade-in" style="animation-delay: 0.2s">Membangun Desa, Mengabdi untuk Negeri</p>
+        <div class="fade-in" style="animation-delay: 0.4s">
+          <a href="#about" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">Telusuri Kegiatan</a>
+        </div>
+      </div>
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <a href="#about">
+          <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang KKN Kami</h2>
+          <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Kelompok 12 KKN Margodadi beranggotakan mahasiswa dari berbagai disiplin ilmu yang berkomitmen untuk berkontribusi dalam pembangunan desa.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/85058d56-91a7-42c5-8d9a-14adc95e8566.png"
+              alt="Foto kelompok 12 KKN Margodadi berdiri berbaris di depan balai desa dengan mengenakan kaos seragam putih"
+              class="rounded-xl shadow-xl w-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Profil Kelompok 12</h3>
+            <p class="text-gray-600 mb-4">Kelompok 12 KKN Margodadi terdiri dari 10 mahasiswa dari berbagai fakultas yang ditempatkan di Desa Margodadi, Kecamatan Okut, untuk melaksanakan program Kuliah Kerja Nyata selama 45 hari.</p>
+            <p class="text-gray-600 mb-6">Kami hadir dengan semangat pengabdian untuk turut serta dalam pembangunan desa melalui berbagai program yang disusun berdasarkan kebutuhan masyarakat.</p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-green-50 p-4 rounded-lg">
+                <div class="text-green-600 font-bold text-3xl mb-2">10</div>
+                <div class="text-gray-700">Anggota</div>
+              </div>
+              <div class="bg-green-50 p-4 rounded-lg">
+                <div class="text-green-600 font-bold text-3xl mb-2">45</div>
+                <div class="text-gray-700">Hari Pengabdian</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="program" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Program Kerja Kami</h2>
+          <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Berbagai program unggulan yang kami lakukan untuk mendukung pembangunan di Desa Margodadi.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Program 1 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+            <div class="relative h-48">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ef977173-55d8-4884-b805-50e09ee148c6.png"
+                alt="Kegiatan penyuluhan kesehatan dengan peserta masyarakat desa duduk di kursi plastik merah"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Penyuluhan Kesehatan</h3>
+              <p class="text-gray-600 mb-4">Program edukasi kesehatan dasar dan pola hidup sehat untuk masyarakat Margodadi.</p>
+            </div>
+          </div>
+
+          <!-- Program 2 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+            <div class="relative h-48">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62ccafcb-1262-496c-ac1f-098ffb1cdc46.png"
+                alt="Kegiatan pelatihan keterampilan membuat kerajinan tangan dari bahan daur ulang"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Pelatihan Kewirausahaan</h3>
+              <p class="text-gray-600 mb-4">Pelatihan pengembangan usaha mikro untuk meningkatkan ekonomi masyarakat.</p>
+            </div>
+          </div>
+
+          <!-- Program 3 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transitionall duration-300 card-hover">
+            <div class="relative h-48">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9aaada86-7727-4c2d-a796-ff17f6e44b1f.png"
+                alt="Kegiatan kerja bakti membersihkan parit desa dengan warga mengenakan topi caping"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Pembersihan Lingkungan</h3>
+              <p class="text-gray-600 mb-4">Gerakan bersih-bersih desa untuk menciptakan lingkungan yang sehat dan asri.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Galeri Kegiatan</h2>
+          <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Dokumentasi momen berharga selama pelaksanaan KKN di Desa Margodadi.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/29de8117-2ad7-48bc-b4c1-0c599776b265.png"
+              alt="Sosialisasi program KKN di balai desa dengan peserta ibu-ibu PKK"
+              class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/75344922-3500-410b-b231-d5d3350e46b3.png"
+              alt="Pembagian sembako kepada lansia di teras rumah warga"
+              class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9116035d-159c-4ecb-b21d-532076d017b6.png"
+              alt="Anak-anak desa bermain games edukasi di lapangan sekolah"
+              class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de9c5285-e79a-42ea-a368-4b8965de27d9.png"
+              alt="Pemasangan papan informasi desa bersama kepala dusun"
+              class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9354c21c-dce2-42f4-8cd4-af5c2ecc719e.png" alt("Rapat evaluasi mingguan kelompok di teras rumah warga") class="w-full h-48 object-cover
+            transition-transform duration-300 hover:scale-110">
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/867779f0-9f48-4db8-9009-6c125adfeaf6.png"
+              alt="Pendampingan belajar anak SD di teras rumah dengan latar sawah"
+              class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d2df9075-b385-49e2-977a-771c16c0d8a9.png"
+              alt="Pertandingan voli antar dusun sebagai bagian dari kegiatan olahraga bersama"
+              class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img src="https://placehold.co/500x300" alt("Acara pentas seni malam hari dengan lampu tempel dan penonton duduk di tikar") class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <button class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition">Lihat Lebih Banyak</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
+          <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto">Untuk informasi lebih lanjut tentang kegiatan KKN Kelompok 12 Margodadi.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-xl font-bold mb-6">Lokasi KKN</h3>
+            <div class="rounded-xl overflow-hidden h-64 mb-6">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8bfd0ae2-a528-4965-818b-836448082c54.png"
+                alt="Peta lokasi desa Margodadi di Kecamatan Okut dengan penanda posisi kelompok KKN"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <svg class="h-6 w-6 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <p>Desa Margodadi, Kecamatan Okut, Kabupaten Sekitarnya</p>
+              </div>
+              <div class="flex items-start">
+                <svg class="h-6 w-6 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <p>kknmargodadi12@example.ac.id</p>
+              </div>
+              <div class="flex items-start">
+                <svg class="h-6 w-6 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <p>+62 812-3456-7890</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-6">Kirim Pesan</h3>
+            <form class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium mb-1">Nama Lengkap</label>
+                <input type="text" id="name" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500 text-white" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500 text-white" />
+              </div>
+              <div>
+                <label for="subject" class="block text-sm font-medium mb-1">Subjek</label>
+                <input type="text" id="subject" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500 text-white" />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium mb-1">Pesan</label>
+                <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500 text-white"></textarea>
+              </div>
+              <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition w-full">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="md:flex md:items-center md:justify-between">
+          <div class="flex justify-center md:justify-start space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="mt-8 md:mt-0">
+            <p class="text-center text-base md:text-right">© 2024 KKN Margodadi Kelompok 12. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document.querySelector('[aria-controls="mobile-menu"]').addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+
+      // Smooth scrolling for navigation
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Form submission
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Pesan Anda telah terkirim. Terima kasih!");
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
